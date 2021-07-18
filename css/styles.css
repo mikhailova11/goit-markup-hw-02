@@ -46,13 +46,14 @@ button:focus{
     line-height: 1.2;
 }
 
-.logo-link .logo{ 
-    color: var(--interactive);
-
 .logo-link:hover,
 .logo-link:focus{
     color: var(--interactive);
     }
+
+.logo-link .logo{ 
+    color: var(--interactive);
+    }  
 
 .site-nav a{
     font-weight: 500;
@@ -72,6 +73,11 @@ button:focus{
     font-size: 14px;
     line-height: 1,14;
 }
+.contacts-box{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;  
+}
 
 .contacts-box a:focus,
 .contacts-box a:hover{
@@ -83,15 +89,13 @@ button:focus{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    text-transform: uppercase;
-    color: var(text-title);
+    color: var(--text-title);
 }
 .hero-btn{
     font-family: Roboto;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-    text-align: center;
 }
 .features h3{
     font-weight: bold;
@@ -128,4 +132,11 @@ button:focus{
 }
 .address p{
     color: var(--text-title);
+    font-size: 14px;
+    line-height: 1.71;
+}
+.address a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
 }

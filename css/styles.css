@@ -8,13 +8,14 @@
     /*Текст*/
     --primary-color:            #212121;/*основной цвет текста*/
     --secondary-color:          #757575;/*вторичный цвет текста*/
-    --text-title:               #FFFFFF;                   
+    --text-title:               #FFFFFF;/*цвет текста*/                  
 
     /*Фон*/
     --background:               #E5E5E5;/*цвет основного фона*/
+    --background-secondary:     #FFFFFF;/*цвет фона кнопки в спокойном состоянии*/
+    --background-dark:          #2F303A;/*цвет фона в футере*/
+    --background-light:         #F5F4FA;
     --background-btn-control:   #2196F3;/*цвет фона на кнопке при фокусе*/
-    --background-btn:           #F5F4FA;/*цвет фона кнопки в спокойном состоянии*/
-
 }
 
 body {
@@ -23,9 +24,19 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.hero,
+.footer{
+    background: var(--background-dark);
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Кнопки*/
 button{
     color: var(--btn);
-    background: var(--background-btn);
+    background: var(--background-light);
     cursor: pointer;
     font-family: Roboto;
     font-weight: 500;
@@ -39,44 +50,64 @@ button:focus{
     background-color: var(--background-btn-control);
 }
 
+/*Логотип*/
+.logo-light{
+    color: var(--text-title);
+}
+
+.logo-dark{
+    color: var(--primary-color);
+}
+
 .logo-link{
     font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo-link:hover,
 .logo-link:focus{
     color: var(--interactive);
-    }
+}
 
 .logo-link .logo{ 
     color: var(--interactive);
-    }  
+}  
 
+/*Навигация по сайту*/
 .site-nav a{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .site-nav a:hover,
 .site-nav a:focus{
     color: var(--interactive);
-    }
+}
 
+.site-nav .current{
+    color: var(--interactive);
+}
+
+/*Почта и телефон*/
 .contacts-box a{
     color: var(--secondary-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1,14;
+    text-decoration: none;
 }
+
 .contacts-box{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;  
+    line-height: 1.14; 
+    text-decoration: none; 
 }
 
 .contacts-box a:focus,
@@ -84,6 +115,7 @@ button:focus{
     color: var(--interactive);
 }
 
+/*Блок герой*/
 .hero h1{
     font-weight: 900;
     font-size: 44px;
@@ -91,14 +123,17 @@ button:focus{
     text-align: center;
     color: var(--text-title);
 }
+
 .hero-btn{
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
 }
+
+/*Блок особенности*/
 .features h3{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -109,14 +144,20 @@ button:focus{
     line-height:1.71;    
     color:var(--secondary-color);
 }
+
+/*Блок: - Чем мы занимаемся?*/
 .aside h2{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
 
+/*Блок: - Наша команда*/
+.team{
+    background: var(--background-light);
+}
 .team h2{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
@@ -126,17 +167,34 @@ button:focus{
     font-size: 16px;
     line-height: 1.19;
 }
+
 .team p{
     font-size: 16px;
     line-height: 1.19;
 }
+
+/*Адрес в подвале сайта*/
 .address p{
     color: var(--text-title);
     font-size: 14px;
     line-height: 1.71;
 }
+
 .address a{
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
+}
+
+/*Блок с набором карточек*/
+.preview h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.preview p{
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-color);
 }

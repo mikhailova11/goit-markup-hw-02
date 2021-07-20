@@ -103,13 +103,15 @@ button:focus{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    font-style: normal;
 }
 
 .contacts-box{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14; 
-    text-decoration: none; 
+    text-decoration: none;
+    font-style: normal; 
 }
 
 .contacts-box a:focus,
@@ -179,7 +181,7 @@ button:focus{
 }
 
 /*Адрес в подвале сайта*/
-.address p{
+.address{
     color: var(--text-title);
     font-size: 14px;
     line-height: 1.71;
